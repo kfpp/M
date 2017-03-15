@@ -1,0 +1,395 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ClockActivity_Background"
+    android:gravity="top"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PicClockActivity"
+    android:focusableInTouchMode="true">
+	
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="02:33"
+        android:textColor="@color/ClockActivity_global_text_color"
+        android:textSize="65dp" />
+<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:orientation="horizontal"
+	    android:id="@+id/lyData"
+	    android:layout_below="@+id/tvTime">
+
+    <TextView
+        android:id="@+id/tvData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="24dp"
+        android:text="2014年12月19日"
+        android:textColor="@color/ClockActivity_global_text_color"
+        android:textSize="23dp" />
+    <TextView
+        android:id="@+id/tvWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星期五"
+        android:textColor="@color/ClockActivity_global_text_color"
+        android:textSize="23dp" />
+    <TextView
+        android:id="@+id/tvLunarData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:text="十月十九"
+        android:textColor="@color/ClockActivity_global_text_color"
+        android:textSize="23dp" />
+	</LinearLayout>
+    <LinearLayout
+        android:id="@+id/lyWeather"
+        android:layout_width="550dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/lyData"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="400dp"
+            android:background="@color/ClockActivity_left_weather"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvToday"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/ClockActivity_weather_title_height"
+                android:background="@color/ClockActivity_left_top_today"
+                android:gravity="center_vertical"
+                android:text="  今天"
+                android:textColor="@color/ClockActivity_global_text_color" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="140dp" >
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/weihuzhong"
+                    android:textColor="@color/ClockActivity_global_text_color"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/tvTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvCity"
+                    android:layout_below="@+id/tvCity"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/weihuzhong"
+                    android:textColor="@color/ClockActivity_global_text_color"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:id="@+id/tvWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tvTemp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_toRightOf="@+id/tvTemp"
+                    android:text="睛"
+                    android:textColor="@color/ClockActivity_global_text_color"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/ivWeatherIcon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:contentDescription="睛天"
+                    android:src="@drawable/qingtian" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="137dp"
+                    android:layout_height="fill_parent" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/solid" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/solid" />
+
+                    <TextView
+                        android:id="@+id/tvTomorrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="明天"
+                        android:textColor="@color/ClockActivity_global_text_color" />
+
+                    <TextView
+                        android:id="@+id/tvTTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvTomorrow"
+                        android:layout_below="@+id/tvTomorrow"
+                        android:text="@string/weihuzhong"
+                        android:textColor="@color/ClockActivity_global_text_color"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/tvTWeather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvTomorrow"
+                        android:layout_below="@+id/tvTTemp"
+                        android:text="@string/weihuzhong"
+                        android:textColor="@color/ClockActivity_global_text_color" />
+
+                    <ImageView
+                        android:id="@+id/ivTWeatherIcon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignLeft="@+id/tvTomorrow"
+                        android:layout_below="@+id/tvTWeather"
+                        android:src="@drawable/duoyuzhuanqing" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/solid" />
+
+                    <TextView
+                        android:id="@+id/tvATomorrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="后天"
+                        android:textColor="@color/ClockActivity_global_text_color" />
+
+                    <TextView
+                        android:id="@+id/tvATTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvATomorrow"
+                        android:layout_below="@+id/tvATomorrow"
+                        android:text="@string/weihuzhong"
+                        android:textColor="@color/ClockActivity_global_text_color"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:id="@+id/tvATWeather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvATomorrow"
+                        android:layout_below="@+id/tvATTemp"
+                        android:text="@string/weihuzhong"
+                        android:textColor="@color/ClockActivity_global_text_color" />
+
+                    <ImageView
+                        android:id="@+id/ivATWeatherIcon"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignLeft="@+id/tvATomorrow"
+                        android:layout_below="@+id/tvATWeather"
+                        android:src="@drawable/xiaoyu" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="275dp"
+            android:layout_height="400dp"
+            android:background="@color/ClockActivity_right_calendar"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/main_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <RelativeLayout
+                    android:id="@+id/title_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/title_bg"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/today_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="6dip"
+                        android:background="@drawable/today_selector"
+                        android:text="今天" >
+                    </Button>
+
+                    <TextView
+                        android:id="@+id/today_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="日历"
+                        android:textColor="@color/white"
+                        android:textSize="19dip" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/message_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_layout" >
+
+                    <ImageView
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/ClockActivity_weather_title_height"
+                        android:background="@color/ClockActivity_right_top_calendar" >
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/left_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/left_selector"
+                        android:paddingTop="7dip" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/day_message"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingTop="7dip"
+                        android:text="2012年11月13号"
+                        android:textSize="18dip"
+                        android:textColor="@color/calendar_title_text_color" >
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/right_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/right_selector"
+                        android:paddingTop="7dip" >
+                    </ImageView>
+                </RelativeLayout>
+				<LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:paddingTop="7dp"
+				    android:paddingBottom="7dp"
+				    android:orientation="horizontal"
+				    android:layout_below="@+id/message_layout"
+				    android:id="@+id/weekday_layout">
+				   	<TextView 
+				   	    android:layout_width="39dp"
+				   	    android:layout_height="wrap_content"
+				   	    android:text="@string/weekday7"
+				   	    android:gravity="center_horizontal"
+				   	    android:textColor="@color/calendar_weekday_text_color"/> 
+				   	<TextView 
+				   	    android:layout_width="39dp"
+				   	    android:layout_height="wrap_content"
+				   	    android:text="@string/weekday1"
+				   	    android:gravity="center_horizontal"
+				   	    android:textColor="@color/calendar_weekday_text_color"/> 
+				   	    <TextView 
+				   	    android:layout_width="39dp"
+				   	    android:layout_height="wrap_content"
+				   	    android:text="@string/weekday2"
+				   	    android:gravity="center_horizontal"
+				   	    android:textColor="@color/calendar_weekday_text_color"/> 
+				   	    <TextView 
+				   	    android:layout_width="39dp"
+				   	    android:layout_height="wrap_content"
+				   	    android:text="@string/weekday3"
+				   	    android:gravity="center_horizontal"
+				   	    android:textColor="@color/calendar_weekday_text_color"/> 
+				   	    <TextView 
+				   	    android:layout_width="39dp"
+				   	    android:layout_height="wrap_content"
+				   	    android:text="@string/weekday4"
+				   	    android:gravity="center_horizontal"
+				   	    android:textColor="@color/calendar_weekday_text_color"/> 
+				   	    <TextView 
+				   	    android:layout_width="39dp"
+				   	    android:layout_height="wrap_content"
+				   	    android:text="@string/weekday5"
+				   	    android:gravity="center_horizontal"
+				   	    android:textColor="@color/calendar_weekday_text_color"/> 
+				   	    <TextView 
+				   	    android:layout_width="39dp"
+				   	    android:layout_height="wrap_content"
+				   	    android:text="@string/weekday6"
+				   	    android:gravity="center_horizontal"
+				   	    android:textColor="@color/calendar_weekday_text_color"/> 
+				</LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/calendar_main"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@+id/weekday_layout" 
+                    android:descendantFocusability="blocksDescendants">
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+        <Gallery 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:id="@+id/gAdver"/>
+    -->
+
+    <ImageView
+        android:id="@+id/ivAdver"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp" />
+
+</RelativeLayout>

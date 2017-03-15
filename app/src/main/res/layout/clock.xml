@@ -1,0 +1,456 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ClockActivity_Background"
+    android:focusableInTouchMode="true"
+    android:gravity="top"
+    android:paddingTop="@dimen/activity_padding_top"
+    tools:context=".PicClockActivity" >
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/time_margin_top"
+        android:gravity="center_horizontal"
+        android:text="@string/time_default"
+        android:textColor="@color/ClockActivity_global_text_color"
+        android:textSize="@dimen/time_text_size" />
+
+    <LinearLayout
+        android:id="@+id/lyData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTime"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tvData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/date_margin_bottom"
+            android:layout_marginEnd="@dimen/date_margin_right"
+            android:layout_marginRight="@dimen/date_margin_right"
+            android:text="@string/date_default"
+            android:textColor="@color/ClockActivity_global_text_color"
+            android:textSize="@dimen/date_text_size" />
+
+        <TextView
+            android:id="@+id/tvWeek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/weekday_default"
+            android:textColor="@color/ClockActivity_global_text_color"
+            android:textSize="@dimen/date_text_size" />
+
+        <TextView
+            android:id="@+id/tvLunarData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/lunar_date_marginl_left"
+            android:layout_marginStart="@dimen/lunar_date_marginl_left"
+            android:text="@string/lunar_date_default"
+            android:textColor="@color/ClockActivity_global_text_color"
+            android:textSize="@dimen/date_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lyWeather"
+        android:layout_width="@dimen/weather_width"
+        android:layout_height="@dimen/weather_height"
+        android:layout_below="@+id/lyData"
+        android:layout_centerHorizontal="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/jianbian_jingsu"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvToday"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line1_height"
+                android:paddingLeft="15dp"
+                android:paddingRight="0dp"
+                android:paddingEnd="0dp"
+                android:background="@drawable/jianbian_jingsu2"
+                android:gravity="center_vertical"
+                android:text="@string/day_now_default"
+                android:textColor="@color/ClockActivity_global_text_color"
+                android:textSize="@dimen/day_now_text_size" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/city_name_marginl_left"
+                    android:layout_marginStart="@dimen/city_name_marginl_left"
+                    android:layout_marginTop="@dimen/city_name_marginl_top"
+                    android:text="@string/NA"
+                    android:textColor="@color/ClockActivity_global_text_color"
+                    android:textSize="@dimen/city_name_text_size" />
+
+                <TextView
+                    android:id="@+id/tvTemp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tvCity"
+                    android:layout_alignStart="@+id/tvCity"
+                    android:layout_below="@+id/tvCity"
+
+                    android:layout_marginTop="@dimen/temp_marginl_top"
+                    android:textColor="@color/ClockActivity_global_text_color"
+                    android:textSize="@dimen/temp_today_text_size" />
+
+                <TextView
+                    android:id="@+id/tvWeather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tvTemp"
+                    android:layout_marginLeft="@dimen/weather_today_marginl_left"
+                    android:layout_marginStart="@dimen/weather_today_marginl_left"
+                    android:layout_marginTop="@dimen/weather_today_marginl_top"
+                    android:layout_toEndOf="@+id/tvTemp"
+
+                    android:layout_toRightOf="@+id/tvTemp"
+                    android:textColor="@color/ClockActivity_global_text_color"
+                    android:textSize="@dimen/weather_today_text_size" />
+
+                <ImageView
+                    android:id="@+id/ivWeatherIcon"
+                    android:layout_width="@dimen/weather_image_today_size"
+                    android:layout_height="@dimen/weather_image_today_size"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="@dimen/weather_image_margin_right"
+                    android:layout_marginRight="@dimen/weather_image_margin_right"
+                    android:layout_marginTop="@dimen/weather_image_margin_top"
+                    android:contentDescription="@string/weather_image_descripte_default"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/qingtian" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/solid" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/solid" />
+
+                    <TextView
+                        android:id="@+id/tvTomorrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/tomorrow_marginl_left"
+                        android:layout_marginStart="@dimen/tomorrow_marginl_left"
+                        android:layout_marginTop="@dimen/tomorrow_marginl_top"
+                        android:text="@string/tomorrow_default"
+                        android:textColor="@color/ClockActivity_global_text_color"
+                        android:textSize="@dimen/tomorrow_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvTTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvTomorrow"
+                        android:layout_alignStart="@+id/tvTomorrow"
+                        android:layout_below="@+id/tvTomorrow"
+                        android:text="@string/NA"
+                        android:textColor="@color/ClockActivity_global_text_color"
+                        android:textSize="@dimen/tomorrow_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvTWeather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvTomorrow"
+                        android:layout_alignStart="@+id/tvTomorrow"
+                        android:layout_below="@+id/tvTTemp"
+
+                        android:textColor="@color/ClockActivity_global_text_color"
+                        android:textSize="@dimen/tomorrow_text_size" />
+
+                    <ImageView
+                        android:id="@+id/ivTWeatherIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvTomorrow"
+                        android:layout_alignStart="@+id/tvTomorrow"
+                        android:layout_marginBottom="@dimen/tomorrow_weather_image_marginl_bottom"
+                        android:layout_below="@+id/tvTWeather"
+                        android:contentDescription="@string/weather_image_descripte_default"
+                        android:src="@drawable/duoyuzhuanqing" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/solid" />
+
+                    <TextView
+                        android:id="@+id/tvATomorrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/tomorrow_marginl_left"
+                        android:layout_marginStart="@dimen/tomorrow_marginl_left"
+                        android:layout_marginTop="@dimen/tomorrow_marginl_top"
+                        android:text="@string/day_after_tomorrow_default"
+                        android:textColor="@color/ClockActivity_global_text_color"
+                        android:textSize="@dimen/tomorrow_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvATTemp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvATomorrow"
+                        android:layout_alignStart="@+id/tvATomorrow"
+                        android:layout_below="@+id/tvATomorrow"
+                        android:text="@string/NA"
+                        android:textColor="@color/ClockActivity_global_text_color"
+                        android:textSize="@dimen/tomorrow_text_size" />
+
+                    <TextView
+                        android:id="@+id/tvATWeather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvATomorrow"
+                        android:layout_alignStart="@+id/tvATomorrow"
+                        android:layout_below="@+id/tvATTemp"
+
+                        android:textColor="@color/ClockActivity_global_text_color"
+                        android:textSize="@dimen/tomorrow_text_size" />
+
+                    <ImageView
+                        android:id="@+id/ivATWeatherIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/tvATomorrow"
+                        android:layout_alignStart="@+id/tvATomorrow"
+                        android:layout_marginBottom="@dimen/tomorrow_weather_image_marginl_bottom"
+                        android:layout_below="@+id/tvATWeather"
+                        android:contentDescription="@string/weather_image_descripte_default"
+                        android:src="@drawable/xiaoyu" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/jianbian_jingsu"
+            android:orientation="vertical" >
+
+            <!--
+                <RelativeLayout
+                    android:id="@+id/title_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/title_bg"
+                    android:visibility="gone" >
+
+                    <Button
+                        android:id="@+id/today_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="6dip"
+                        android:background="@drawable/today_selector"
+                        android:text="今天" >
+                    </Button>
+
+                    <TextView
+                        android:id="@+id/today_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="日历"
+                        android:textColor="@color/white"
+                        android:textSize="19dip" >
+                    </TextView>
+                </RelativeLayout>
+            -->
+
+            <RelativeLayout
+                android:id="@+id/message_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/line1_height"
+                android:background="@drawable/jianbian_jingsu">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/jianbian_jingsu2"
+                    android:contentDescription="@string/bkg_gray_default" >
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/left_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/left_selector"
+                    android:contentDescription="@string/arrow_left"
+                    android:paddingTop="@dimen/arrow_left_padding_top" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/day_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/arrow_left_padding_top"
+                    android:text="@string/data_line1_right_default"
+                    android:textColor="@color/calendar_weekday_text_color"
+                    android:textSize="@dimen/data_line1_right_text_size" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/right_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/right_selector"
+                    android:contentDescription="@string/arrow_right"
+                    android:paddingTop="@dimen/arrow_left_padding_top" >
+                </ImageView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/weekday_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/week_days_padding_bottom"
+                android:paddingTop="@dimen/week_days_padding_top" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/weekday7"
+                    android:textColor="@color/calendar_weekday_text_color" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/weekday1"
+                    android:textColor="@color/calendar_weekday_text_color" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/weekday2"
+                    android:textColor="@color/calendar_weekday_text_color" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/weekday3"
+                    android:textColor="@color/calendar_weekday_text_color" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/weekday4"
+                    android:textColor="@color/calendar_weekday_text_color" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/weekday5"
+                    android:textColor="@color/calendar_weekday_text_color" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/weekday6"
+                    android:textColor="@color/calendar_weekday_text_color" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/calendar_main"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+        <Gallery 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:id="@+id/gAdver"/>
+    -->
+
+    <ImageView
+        android:id="@+id/ivAdver"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/advertisement_image_descripte_default"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp" />
+
+</RelativeLayout>

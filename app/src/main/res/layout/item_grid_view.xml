@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="400dp" >
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/ivMain"
+        
+        />
+    <LinearLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	   	android:layout_alignParentBottom="true"
+	   	android:orientation="horizontal"
+	   	android:background="#40000000"
+	   	>
+	   	<ImageView 
+	   	    android:layout_height="fill_parent"
+	   	    android:layout_width="wrap_content"
+	   	    android:src="@drawable/diretory_icon"
+	   	    android:layout_marginLeft="10dp"
+	   	    android:id="@+id/ivDiretory"/>
+        <TextView 
+	    android:layout_width="0dp"
+	    android:layout_weight="1"
+	    android:layout_height="40dp"
+	    android:text="@string/app_name"
+	    android:gravity="center"
+	    android:textColor="#FFFFFFFF"
+
+	    android:id="@+id/tvMain"/>
+        <ImageView 
+            android:layout_height="fill_parent"
+	   	    android:layout_width="wrap_content"
+	   	    android:src="@android:drawable/ic_menu_delete"
+	   	    android:id="@+id/ivDelete"/>
+    </LinearLayout>
+	
+</RelativeLayout>

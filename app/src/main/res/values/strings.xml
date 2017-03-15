@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="OK">确定</string>
+    <string name="warning">警告</string>
+    <string name="starting">启动中...</string>
+	<string name="weihuzhong">维护中</string>
+    <string name="show_test">微视亲，只为传递亲情而生</string>
+	<string name="sure_exit">确定要退出吗？</string>
+	<string name="sure_delete">确定要删除吗？</string>
+	<string name="Cancle">取消</string>
+	<string name="uncatch_error_occured">很抱歉，程序出现未知错误，即将重启</string>
+	<string name="Close">关闭</string>
+	<string name="import_picture">导入</string>
+	<string name="begin_scan_sdcard">开始扫描SD卡</string>
+	<string name="no_new_picture_in_sdcard">没发现SD卡新图片</string>
+	<string name="begin_add_picture_from_sdcard">开始同步图片</string>
+	<string name="end_add_picture_from_sdcard">同步图片完成</string>
+	<string name="scan_result">智能扫描结果</string>
+	<string name="Select">选择</string>
+    <string name="weather_updata">天气数据已更新</string>
+    <string name="bind_code_repeat">绑定口令已存在，请重新输入！</string>
+    <string name="weather_controls_refresh">天气信息已刷新</string>
+    <string name="setting">管理</string>
+    <string name="setting_SelectCity">选择城市</string>
+    <string name="error_noweather">没有找到对应城市的天气信息</string>
+    <string name="app_name">微视亲</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_time">时钟</string>
+    <string name="action_weather">天气预报</string>
+    <string name="success_g">成功</string>
+    <string name="fail_g">失败</string>
+    <string name="ActiActivity_serial_hint">请输入序列号</string>
+    <string name="ActiActivity_bindcode_hint">请设置喜欢的绑定口令</string>
+    <string name="ActiActivity_logo_text">微视亲</string>
+    <string name="ActiActivity_below_logo">新一代电子相框，微信即传即看</string>
+    <string name="ActiActivity_company">企强在线·出品</string>
+    <string name="ActiActivity_name">激活</string>
+    <string name="ActiActivity_ActivateFail">激活失败，序列号错误</string>
+    <string name="ActiActivity_Code_Text">序列号：</string>
+    <string name="ActiActivity_MachineCode_Text">机器号：</string>
+    <string name="ActiActivity_BindingPassword_Text">绑定口令：</string>
+    <string name="ActiActivity_SendBtn_name">确定</string>
+    <string name="ActiActivity_SendBtn_Null_Alert">序列号或绑定码不能为空</string>
+    <string name="ActiActivity_Activating">激活中，请稍候。。。</string>
+    <string name="ActiActivity_ReConnect_name">重连</string>
+    <string name="ActiActivity_PlayAll_name">幻灯播放</string>
+    <string name="ActiActivity_GetActiBtn_name">获取激活码</string>
+    <string name="PicActivity_name">相册</string>
+    <string name="PicActivity_play_name">幻灯播放</string>
+    <string name="PicPlayActivity_name">幻灯播放</string>
+    <string name="registerTV1">请输入您的手机号码或电子邮箱：</string>
+    <string name="phone">请输入您的手机号码</string>
+    <string name="registerTV2">请输入您的微信绑定口令：</string>
+    <string name="weekday1">周一</string>
+    <string name="weekday2">周二</string>
+    <string name="weekday3">周三</string>
+    <string name="weekday4">周四</string>
+    <string name="weekday5">周五</string>
+    <string name="weekday6">周六</string>
+    <string name="weekday7">周日</string>
+    <string name="none">暂无</string>
+    <string name="data_sync">SD卡数据同步中</string>
+    <string name="waiting">请稍候。。。</string>
+    <string name="wait_for_QRCode">加载二维码中，请稍候...</string>
+    <string name="data_sync_error">数据同步出错</string>
+    <string name="data_sync_by_hand">请手动将本机存储根目录中的“MPFCache”文件夹整个复制到SD卡根目录</string>
+    <string name="new_picture_in">收到新图片了</string>
+    <string name="new_music_in">收到新音乐了</string>
+    <string name="NA">N/A</string>
+    <string name="no_network">无网络连接</string>
+    <string name="set_your_network">请设置好您的网络连接</string>
+	<string name="WIFI">WIFI</string>
+	<string name="BkgMusic">背景音乐</string>
+	<string name="clock_activity_alert_dialog_title">扫描二维码-->关注企强在线公众号-->发送图片</string>
+	<string name="buffering">开始缓冲，请稍候...</string>
+	<string name="be_shield">(已被拉黑)</string>
+	<string name="delete_user_alert_text">此操作将会删除此用户和该用户下的所有图片，确定要继续吗？</string>
+	<string name="delete_success">删除成功</string>
+    <string name="delete">删除</string>
+	
+	<!-- 时钟界面 -->
+	<string name="time_default">02:33</string>
+	<string name="date_default">2014年12月19日</string>
+	<string name="weekday_default">星期五</string>
+	<string name="lunar_date_default">十月十九</string>
+	<string name="day_now_default">     今天</string>
+	<string name="weather_image_descripte_default">睛天</string>
+	<string name="tomorrow_default">明天</string>
+	<string name="day_after_tomorrow_default">后天</string>
+	<string name="bkg_gray_default">背景灰</string>
+	<string name="arrow_left">左箭头</string>
+	<string name="arrow_right">右箭头</string>
+	<string name="data_line1_right_default">2012年11月13号</string>
+	<string name="advertisement_image_descripte_default">广告位</string>
+
+    <!--菜单 -->
+    <string name="menu_setting">设置</string>
+    <string name="menu_play_pause_continue">继续播放/暂停播放</string>
+
+    <!--同步数据库的确认对话框-->
+    <string name="dialog_message_syncDataBase">即将从SD卡同步激活数据到本机，如果这张SD卡不是您的，
+        请不要执行此步骤！（如果您没有插SD卡，请忽略此警告并点击同步以开始此步骤）</string>
+    <string name="dialog_button_syncDataBase_OK">同步</string>
+    <string name="Toast_sync_compelete">同步完成</string>
+
+    <!-- BaseActivity -->
+    <string name="error_no_player">没有找到音乐播放器！</string>
+    <string name="download_music_player">初始化音乐播放器中...</string>
+    <string name="title_activity_pic_play_activity2">PicPlayActivity2</string>
+    <string name="action_settings">Settings</string>
+
+    <!--PicPlayActivity2-->
+    <string name="pause_play">暂停播放</string>
+    <string name="start_play">开始播放</string>
+    <string name="picture_can_not_delete">此图片不能删除</string>
+    <string name="delete_source_file">删除源文件</string>
+
+    <!--DeleteDialogFragment-->
+    <string name="default_delete_dialog_title">删除</string>
+    <string name="default_delete_dialog_content">确定要删除吗？</string>
+
+    <!--CitySetting界面-->
+    <string name="setting_successed">设置成功</string>
+    <string name="import_picture_result_dialog_title">扫描SD卡</string>
+    <string name="import_picture_result_dialog_message">扫描卡,请稍候...</string>
+    <!--PicActivity-->
+    <string name="picactivity_title">图片总览</string>
+    <string name="pic_list_title">用户图片列表（单击以只显示该用户的图片）</string>
+    <string name="sdcard_root_path">SD卡根目录</string>
+    <string name="delete_pic_info">提示：删除图片只是不再显示该图片，并不会删除图片文件</string>
+</resources>

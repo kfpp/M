@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 时钟界面 -->
+    <dimen name="activity_padding_top">5dp</dimen>
+    <dimen name="weather_width">500dp</dimen>
+    <dimen name="weather_height">200dp</dimen>
+    <dimen name="line1_height">25dp</dimen>
+    <dimen name="weather_image_today_size">50dp</dimen>
+    <dimen name="weather_image_margin_right">25dp</dimen>
+    <dimen name="weather_image_margin_top">5dp</dimen>
+    <dimen name="time_margin_top">0dp</dimen>
+    <dimen name="date_margin_bottom">10dp</dimen>
+    <dimen name="date_margin_right">24dp</dimen>
+    <dimen name="lunar_date_marginl_left">24dp</dimen>
+    <dimen name="city_name_marginl_left">20dp</dimen>
+    <dimen name="city_name_marginl_top">10dp</dimen>
+    <dimen name="temp_marginl_top">5dp</dimen>
+    <dimen name="weather_today_marginl_top">0dp</dimen>
+    <dimen name="weather_today_marginl_left">50dp</dimen>
+    <dimen name="tomorrow_marginl_left">20dp</dimen>
+    <dimen name="tomorrow_marginl_top">10dp</dimen>
+    <dimen name="tomorrow_weather_image_marginl_bottom">5dp</dimen>
+    <dimen name="arrow_left_padding_top">0dp</dimen>
+    <dimen name="week_days_padding_top">3dp</dimen>
+    <dimen name="week_days_padding_bottom">3dp</dimen>
+
+    <!--字体大小-->
+    <dimen name="time_text_size">50sp</dimen>
+    <dimen name="date_text_size">20sp</dimen>
+    <dimen name="day_now_text_size">15sp</dimen>
+    <dimen name="city_name_text_size">20sp</dimen>
+    <dimen name="temp_today_text_size">15sp</dimen>
+    <dimen name="weather_today_text_size">17sp</dimen>
+    <dimen name="tomorrow_text_size">13sp</dimen>
+    <dimen name="data_line1_right_text_size">15sp</dimen>
+    <!-- 时钟界面 结束 -->
+
+</resources>

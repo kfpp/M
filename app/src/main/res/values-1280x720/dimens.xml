@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="activity_paddingBottom">8dp</dimen>
+	<dimen name="PicCloActivity_calendar_daynow_redius">6dp</dimen>
+	<dimen name="ClockActivity_weather_title_height">40dp</dimen>
+	
+	<!-- 时钟界面 -->
+	<dimen name="activity_padding_top">0dp</dimen>
+	<dimen name="weather_width">850dp</dimen>
+	<dimen name="weather_height">450dp</dimen>
+	<dimen name="line1_height">50dp</dimen>
+	<dimen name="weather_image_today_size">120dp</dimen>
+	<dimen name="weather_image_margin_right">12dp</dimen>
+	<dimen name="weather_image_margin_top">5dp</dimen>
+	<dimen name="time_margin_top">20dp</dimen>
+	<dimen name="date_margin_bottom">10dp</dimen>
+	<dimen name="date_margin_right">24dp</dimen>
+	<dimen name="lunar_date_marginl_left">24dp</dimen>
+	<dimen name="city_name_marginl_left">50dp</dimen>
+	<dimen name="city_name_marginl_top">25dp</dimen>
+	<dimen name="temp_marginl_top">40dp</dimen>
+	<dimen name="weather_today_marginl_top">25dp</dimen>
+	<dimen name="weather_today_marginl_left">22dp</dimen>
+	<dimen name="tomorrow_marginl_left">50dp</dimen>
+	<dimen name="tomorrow_marginl_top">10dp</dimen>
+	<dimen name="tomorrow_weather_image_marginl_bottom">10dp</dimen>
+	<dimen name="arrow_left_padding_top">7dp</dimen>
+	<dimen name="week_days_padding_top">17dp</dimen>
+	<dimen name="week_days_padding_bottom">17dp</dimen>
+	
+	<dimen name="time_text_size">90sp</dimen>
+	<dimen name="date_text_size">35sp</dimen>
+	<dimen name="day_now_text_size">20sp</dimen>
+	<dimen name="city_name_text_size">33sp</dimen>
+	<dimen name="temp_today_text_size">33sp</dimen>
+	<dimen name="weather_today_text_size">30sp</dimen>
+	<dimen name="tomorrow_text_size">23sp</dimen>
+	<dimen name="data_line1_right_text_size">18sp</dimen>
+	<!-- 时钟界面 结束 -->
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true" 
+    android:background="@drawable/jianbian_jingsu"  >
+
+    <HorizontalScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="10dp">
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <GridView 
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/gridViewMain"
+                android:gravity="center"
+                android:stretchMode="spacingWidthUniform"
+                android:numColumns="auto_fit"
+                android:verticalSpacing="10dp"
+                ></GridView>
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

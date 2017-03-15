@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+   
+
+    <TextView
+        android:id="@+id/MachineCode_zd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/ActiActivity_MachineCode_Text" />
+ 		<TextView
+        android:id="@+id/MachineCode_info"
+        android:layout_toRightOf="@id/MachineCode_zd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        />
+</RelativeLayout>   
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+   
+
+    <TextView
+        android:id="@+id/MachineSerialNumber_zd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/ActiActivity_Code_Text" />
+ 		<TextView
+        android:id="@+id/MachineSerialNumber_info"
+        android:layout_toRightOf="@id/MachineSerialNumber_zd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        />
+</RelativeLayout>  
+  <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+   
+
+    <TextView
+        android:id="@+id/BindingPassword_zd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="@string/ActiActivity_BindingPassword_Text" />
+ 		<TextView
+        android:id="@+id/BindingPassword_info"
+        android:layout_toRightOf="@id/BindingPassword_zd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        />
+</RelativeLayout>   
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ClockActivity_global_text_color">#000000</color>
+    <color name="white">#FFFFFFFF</color> 
+    <color name="ClockActivityLine">#3F000000</color>  
+    <color name="ClockActivity_Background">#fffef9</color>
+    <color name="ClockActivity_left_top_today">#d8d8d8</color>
+    <color name="ClockActivity_right_top_calendar">#e3e3e3</color>
+    <color name="ClockActivity_left_weather">#ebe8e8</color>
+    <color name="ClockActivity_right_calendar">#f1f1f1</color>  
+    <color name="calendar_title_text_color">#000000</color>  <!-- 日历标题-当前年月字体颜色 -->
+    <color name="calendar_weekday_text_color">#000000</color><!-- 日历标题下面的周一到周日的字体颜色 -->
+  	<color name="toumin">#00000000</color><!--  #ffffffff  #00000000--> 
+	<color name="calendar_background">#00000000</color> <!-- #e3eef4 #00000000-->	
+	<color name="selection">#a4a4a4</color><!-- 日历当天的背景色 深灰色-->
+	<color name="calendar_zhe_day">#faedda</color><!-- 浅粉红色-->
+	<color name="event_center">#ff6bd697</color><!-- 绿色-->
+	<color name="noMonth">#c0c0c0</color>    <!-- 非本月国历、农历字体颜色 -->
+	<color name="title_text_6">#FF529bd0</color> <!--  -->
+	<color name="title_text_7">#FFbc4445</color>
+	<color name="text_6">#e67303</color> <!--日历周六颜色-->
+	<color name="text_7">#fe0000</color> <!--日历周日颜色-->
+	<color name="tempColor">#e3e3e3</color>
+	<color name="calendar_lunarcalendar_text_color">#e3e3e3</color>
+	<color name="calendar_text_color">#e3e3e3</color>	
+	<color name="frame">#ffcc3266</color>
+	<color name="forecast_point">#fff66898</color>
+	<color name="br0">#ffffc5dd</color>
+	<color name="Text">#000000</color><!--  本月国历字体颜色-->
+	<color name="ToDayText">#000000</color> <!--#ffc2a53d  本月农历字体颜色-->	
+	<color name="Noteback">#FFCC99</color>
+	<color name="gray">#50E0E0E0</color>
+	<color name="black">#000000</color>
+	<color name="bule">#F04A4AFF</color>
+</resources>

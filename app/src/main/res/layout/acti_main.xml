@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"   
+    android:background="@drawable/acti_bg_color"
+    android:focusableInTouchMode="true" 
+     >
+
+    <!--
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+   
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/ActiActivity_Code_Text" />
+ 	<EditText
+        android:id="@+id/MachineSerialNumber"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:ems="10" 
+        >
+
+    </EditText>
+    <EditText 
+        android:id="@+id/etBindCode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/MachineSerialNumber"
+        android:layout_alignBottom="@+id/tvB"
+        android:ems="10"/>
+
+    <TextView
+        android:id="@+id/tvB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-15dp"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="15dp"
+        android:text="@string/ActiActivity_BindingPassword_Text" />
+
+</RelativeLayout>
+	
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ActiActivity_SendBtn_name" />
+    -->
+
+    <RelativeLayout
+        android:id="@+id/rl_acti_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+         <TextView
+            android:id="@+id/tv_acti_logotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ActiActivity_logo_text"
+            android:textSize="60sp"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_acti_belowlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_acti_logotext"
+            android:layout_centerHorizontal="true"
+            android:text="@string/ActiActivity_below_logo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white" />
+		
+      <!--  <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_acti_belowlogo"
+            android:layout_marginTop="20dp"
+            android:text="@string/ActiActivity_Code_Text" /> 
+		-->
+        <EditText
+            android:id="@+id/MachineSerialNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_acti_belowlogo"
+            android:ems="10"
+            android:hint="@string/ActiActivity_serial_hint" 
+            android:background="@drawable/acti_edittext_selector"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textColor="@color/white"
+            android:singleLine="true">
+        </EditText>
+
+        <EditText
+            android:id="@+id/etBindCode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MachineSerialNumber"
+            android:ems="10"
+            android:hint="@string/ActiActivity_bindcode_hint"
+            android:background="@drawable/acti_edittext_selector"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textColor="@color/white" 
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/edt_acti_phone"
+            android:inputType="phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etBindCode1"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:background="@drawable/acti_edittext_selector"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textColor="@color/white"
+            android:singleLine="true" />
+
+   <!--     <TextView
+            android:id="@+id/tvB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="15dp"
+            android:text="@string/ActiActivity_BindingPassword_Text" />
+	-->
+        <Button
+            android:id="@+id/btn_acti_OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edt_acti_phone"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/acti_edittext_selector"
+            android:paddingTop="7dp"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:paddingRight="10dp"
+            android:paddingBottom="7dp"
+            android:text="@string/ActiActivity_SendBtn_name"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_acti_center"
+        android:text="@string/ActiActivity_company"
+        android:id="@+id/tvLogo"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="-10dp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/rl_acti_center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLogo"
+        android:id="@+id/tvVersion"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="-10dp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/rl_acti_center"
+        />
+   		
+		
+</RelativeLayout>
